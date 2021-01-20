@@ -1,0 +1,195 @@
+<resources>
+    <string name="app_name">Pockles</string>
+
+    <!-- TODO: Remove or change this placeholder text -->
+    <string name="hello_blank_fragment" translatable="false">Hello blank fragment</string>
+    <string name="title_activity_new_pock" translatable="false">NewPockActivity</string>
+    <string name="title_login_activity" translatable="false">LoginActivity</string>
+    <string name="pock_something_hint">Pockea algo</string>
+    <string name="category_hint">Categoría</string>
+    <string name="chat_switch_hint">Chat</string>
+    <string name="pockear_button">Pockear</string>
+    <string name="pock_content_error">¿Un pock sin contenido?</string>
+    <string name="added_pock_message">Se ha publicado tu nuevo pock</string>
+    <string name="publishing_pock">Publicando</string>
+    <string name="api_error_message">Ha habido algún problema con la publicación de tu pock</string>
+
+    <string name="map_menu_item">Mapa</string>
+    <string name="chat_menu_item">Chats</string>
+    <string name="notifications_menu_item">Notificaciones</string>
+    <string name="profile_menu_item">Perfil</string>
+    <string name="close_filter_button">Cerrar</string>
+    <string name="filter_dialog_text">Marca las categorías de Pock que desees ver en tu mapa…</string>
+    <string name="change_image">Cambiar imagen</string>
+
+    <string name="user_format">User: %s</string>
+
+    <!-- Pocks History Resources -->
+    <string name="pocks_history_button">Historial de Pocks</string>
+    <string name="title_activity_pocks_history">NewPocksHistory</string>
+    <string name="message">Message</string>
+    <string name="edit_button">Editar</string>
+
+    <string-array name="categories">
+        <item>Anuncios</item>
+        <item>Compra y Venta</item>
+        <item>Deportes</item>
+        <item>Entretenimiento</item>
+        <item>Mascotas</item>
+        <item>Salud</item>
+        <item>Tecnología</item>
+        <item>Turismo</item>
+        <item>+18</item>
+        <item>Varios</item>
+    </string-array>
+
+    <!-- Map Resources -->
+    <string name="failed_loc">No se pudieron obtener los pocks</string>
+    <string name="achievements_button_text">Logros</string>
+    <string name="pock_history_profile_button_text">Historial de pocks</string>
+    <string name="edit_info_profile_button_text">Editar perfil</string>
+    <string name="settings_profile_button_text">Configuración</string>
+    <string name="close_session_profile_button_text">Cerrar sesión</string>
+    <string name="badge_profile_text">Badge</string>
+    <string name="pocks_created_length_profile">%s pocks</string>
+    <string name="permission_title">Alerta de Permisos</string>
+    <string name="permission_description">Pockles necesita que le des acceso a tu ubicacion para funcionar, sin ella, solo podras acceder a tu perfil y chats previamente creados. ¿Quieres que te preguntemos de nuevo?</string>
+    <string name="permission_ok">Si</string>
+    <string name="permission_no">No</string>
+
+    <string name="facebook_application_id" translatable="false">268555780995029</string>
+    <!-- Facebook Application ID, prefixed by 'fb'. Enables Chrome Custom tabs. -->
+    <string name="facebook_login_protocol_scheme" translatable="false">fb268555780995029</string>
+
+    <string name="google_signin">Iniciar sesión con Google</string>
+    <string name="facebook_sign_in">Iniciar sesión con Facebook</string>
+    <string name="email_sign_in">Iniciar sesión con tu e-mail</string>
+    <string name="register_text_p1">¿No tienes cuenta?</string>
+    <string name="register_text_p2">Utiliza cualqueira de las opciones\nanteriores para registrarte</string>
+
+    <string name="create_profile_register_activity_text">Crear perfil</string>
+    <string name="register_name_hint">Nombre</string>
+    <string name="register_birthdate_hint">Fecha nacimiento</string>
+    <string name="register_accent_color_hint">Color resaltado</string>
+    <string name="register_accent_color_subtitle">Color que se muestra en el perfil</string>
+    <string name="register_pocks_visibility_title">Visibilidad pocks</string>
+    <string name="register_pock_visibility_subtitle">Radio en km de los pocks que aparecerán en el mapa</string>
+    <string name="register_create_profile_button_text">Crear</string>
+    <string name="next">Continuar</string>
+    <string name="visibility_register_format">%s km</string>
+    <string name="field_must_not_be_empty">El campo no puede estar vacío</string>
+    <string name="too_young">Edad minima de 13 años</string>
+    <string name="change">Cambiar</string>
+    <string name="registering">Registrando</string>
+    <string name="invalid_date">Fecha invalida</string>
+    <string name="register_back_button_text">Atrás</string>
+    <string name="error_try_later">Ha ocurrido un error, intentelo de nuevo mas tarde</string>
+    <string name="checking_data">Comprobando datos…</string>
+    <string name="cancel_register_dialog_title">Cancelar registro</string>
+    <string name="cancel_register_dialog_description">¿Seguro que quieres cancelar el registro?</string>
+    <string name="yes">Si</string>
+    <string name="no">No</string>
+    <string name="error_uploading_an_image">Ha ocurrido un error al subir la imagen</string>
+    <string name="error_uploading_images">Ha ocurrido un error al subir las imagenes</string>
+    <string name="error_selecting_image">Ha ocurrido un error al seleccionar la imagen</string>
+    <string name="upload_image_dialog_title">Subir imagen</string>
+    <string name="take_photo_dialog_option">Tomar foto</string>
+    <string name="select_photo_dialog_option">Seleccionar foto</string>
+    <string name="error_creating_profile">Ha ocurrido un error al crear el perfil. Intentelo de nuevo más tarde</string>
+    <string name="save">guardar</string>
+    <string name="nearby_pocks">Pocks a tu alrededor</string>
+    <string name="error_general_like">Ha ocurrido un error con el like</string>
+    <string name="error_no_pock">No se ha podido obtener el pock</string>
+
+    <!-- Report Pock Resources -->
+    <string name="alertTitleReport">Reportar Pock</string>
+    <string name="alertMessageReport">Reportar un Pock es algo muy serio y no puede ser revocado ¿Estas seguro de que quieres reportar este pock?</string>
+    <string name="alertOK">Reportar</string>
+    <string name="alertTitleMotivo">Elige un motivo</string>
+    <string name="alertNO">Cancelar</string>
+    <string name="reported">Ya has reportado este pock</string>
+    <string name="reportSend">Hemos enviado el reporte a nuestros sistemas</string>
+    <string-array name="motivos">
+        <item>SPAM</item>
+        <item>Racismo</item>
+        <item>Categoria inapropiada</item>
+        <item>Contenido inapropiado</item>
+        <item>Amenazas</item>
+        <item>Troll</item>
+        <item>Otros</item>
+    </string-array>
+
+    <!-- Share Pock resources -->
+    <string name="has_published_share_text">ha publicado un nuevo pock el</string>
+    <string name="shared_from_pockles">Compartido desde Pockles</string>
+
+    <!-- Edit Pock Resources -->
+    <string name="title_activity_edit_pock" translatable="false">EditPockActivity</string>
+    <string name="title_toolbar_edit_pock">Editar Pock</string>
+    <string name="correct_pock_hint">Corrige tu Pock</string>
+    <string name="general_category">General</string>
+    <string name="update_pock_button">Guardar cambios</string>
+    <string name="updated_pock_message">Se ha actualizado el contenido de tu pock</string>
+    <string name="api_error_updating_message">Ha habido algún problema actualizando el contenido de tu pock</string>
+    <string name="liked_pock_activity_title">Me gusta</string>
+    <string name="achievements_activity_title">Mis logros</string>
+    <string name="error_obtaining_liked_pocks">Ha ocurrido un error al obtener los pocks gustados</string>
+    <string name="error_removing_like">Ha ocurrido un error al eliminar el me gusta del pock</string>
+
+    <!-- Edit Profile Resources -->
+    <string name="title_toolbar_edit_profile">Editar Perfil</string>
+    <string name="username">Nombre de usuario:</string>
+    <string name="email">Correo electrónico:</string>
+    <string name="birthdate">Fecha de nacimiento:</string>
+    <string name="change_password">Cambiar contraseña:</string>
+    <string name="confirm_password">Confirmar contraseña:</string>
+    <string name="new_password">nueva contraseña</string>
+    <string name="repeat_password">repetir contraseña</string>
+    <string name="delete">Eliminar</string>
+    <string name="cancel_changes_dialog_title">Hay cambios sin guardar</string>
+    <string name="cancel_changes_dialog_description">¿Seguro que quieres salir?</string>
+    <string name="error_editing_the_profile">Ha ocurrido un error al actualizar tu perfil. Intentelo de nuevo más tarde</string>
+    <string name="success_editing_the_profile">Se ha actualizado tu perfil</string>
+    <string name="no_changes_editing_the_profile">Tu perfil ya esta actualizado</string>
+
+    <!-- Chat Strings -->
+    <string name="chats">Chats</string>
+    <string name="you_dont_have_any_chat">No tienes ningún chat</string>
+    <string name="cannot_load_chats">No se han podido obtener los chats</string>
+    <string name="title_activity_chat">Chat</string>
+    <string name="cannot_obtain_the_chat_messages">No se han podido obtener los mesnsajes del chat</string>
+    <string name="cannot_add_message">No se ha podido enviar el mensaje</string>
+
+    <!-- Settings Strings -->
+    <string name="settings">Ajustes</string>
+    <string name="leguage">Idioma</string>
+    <string name="help">Ayuda</string>
+    <string name="version_title">Versión</string>
+    <string name="version_summary" translatable="false">1.0.0</string>
+    <string name="rate_app_title">Puntúa esta aplicación</string>
+    <string name="about_us">Sobre Nosotros</string>
+    <string name="PES_project" translatable="false">Proyecto de PES - Q2 2019/20</string>
+
+
+    <!-- Lenguages avaliables -->
+    <string-array name="language_list_titles">
+        <item>Español</item>
+        <item>English</item>
+        <item>Català</item>
+        <item>Checo</item>
+    </string-array>
+
+    <!-- Lenguages avaliables -->
+    <string-array name="language_list_values">
+        <item>es</item>
+        <item>en</item>
+        <item>ca</item>
+        <item>cs</item>
+    </string-array>
+
+
+    <!-- Notifications Strings -->
+    <string name="notifications_fragment_title">Notificaciones</string>
+    <string name="loading" translatable="false">Loading...</string>
+    <string name="enter_message">Mensaje...</string>
+</resources>

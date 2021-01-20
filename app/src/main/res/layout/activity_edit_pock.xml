@@ -1,0 +1,368 @@
+<?xml version="1.0" encoding="utf-8"?>
+
+<layout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto">
+
+    <data>
+
+        <import type="com.pes.pockles.data.Resource" />
+
+        <import type="android.view.View" />
+
+        <variable
+            name="editPockViewModel"
+            type="com.pes.pockles.view.ui.editpock.EditPockViewModel" />
+    </data>
+
+    <LinearLayout
+        android:id="@+id/editPock"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:orientation="vertical">
+
+        <com.google.android.material.appbar.AppBarLayout
+            android:id="@+id/appBarLayout"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:theme="@style/ThemeOverlay.AppCompat.Dark.ActionBar"
+            app:layout_scrollFlags="scroll">
+
+            <com.google.android.material.appbar.MaterialToolbar
+                android:id="@+id/toolbar"
+                android:layout_width="match_parent"
+                android:layout_height="?attr/actionBarSize"
+                app:popupTheme="@style/ThemeOverlay.AppCompat.Light"
+                app:title="@string/title_toolbar_edit_pock"
+                app:layout_scrollFlags="scroll"/>
+
+        </com.google.android.material.appbar.AppBarLayout>
+
+
+        <ScrollView
+            android:layout_width="match_parent"
+            android:layout_height="match_parent">
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="24dp"
+
+                android:orientation="vertical"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toBottomOf="@+id/constraintLayout">
+
+                <com.google.android.material.textfield.TextInputLayout
+                    style="@style/Widget.MaterialComponents.TextInputLayout.OutlinedBox"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginStart="32dp"
+                    android:layout_marginEnd="32dp"
+                    android:hint="@string/correct_pock_hint"
+                    app:errorEnabled="true">
+
+                    <com.google.android.material.textfield.TextInputEditText
+                        android:id="@+id/pockContentField"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:gravity="top|left"
+                        android:inputType="textMultiLine"
+                        android:lines="8"
+                        android:maxLines="10"
+                        android:minLines="6"
+                        android:scrollbars="vertical"
+                        android:text="@={editPockViewModel.pockContent}" />
+
+                </com.google.android.material.textfield.TextInputLayout>
+
+                <androidx.constraintlayout.widget.ConstraintLayout
+                    android:id="@+id/oldImgLinearLayout"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginStart="32dp"
+                    android:layout_marginEnd="32dp"
+                    android:layout_marginBottom="16dp">
+
+                    <ImageView
+                        android:id="@+id/oldImage1"
+                        android:layout_width="@dimen/add_image_size"
+                        android:layout_height="@dimen/add_image_size"
+                        android:contentDescription="@null"
+                        android:visibility="gone"
+                        app:layout_constraintBottom_toBottomOf="parent"
+                        app:layout_constraintEnd_toStartOf="@+id/oldImage2"
+                        app:layout_constraintHorizontal_bias="0.5"
+                        app:layout_constraintStart_toStartOf="parent"
+                        app:layout_constraintTop_toTopOf="parent" />
+
+                    <ImageButton
+                        android:id="@+id/deleteOldImg1Button"
+                        android:layout_width="32dp"
+                        android:layout_height="32dp"
+                        android:background="@drawable/small_round_button"
+                        android:contentDescription="@null"
+                        android:visibility="gone"
+                        app:layout_constraintTop_toTopOf="@id/oldImage1"
+                        app:layout_constraintEnd_toEndOf="@id/oldImage1"
+                        app:srcCompat="@drawable/ic_close_black_24dp" />
+
+                    <ImageView
+                        android:id="@+id/oldImage2"
+                        android:layout_width="@dimen/add_image_size"
+                        android:layout_height="@dimen/add_image_size"
+                        android:contentDescription="@null"
+                        android:visibility="gone"
+                        app:layout_constraintBottom_toBottomOf="parent"
+                        app:layout_constraintEnd_toStartOf="@+id/oldImage3"
+                        app:layout_constraintHorizontal_bias="0.5"
+                        app:layout_constraintStart_toEndOf="@+id/oldImage1"
+                        app:layout_constraintTop_toTopOf="parent"/>
+
+                    <ImageButton
+                        android:id="@+id/deleteOldImg2Button"
+                        android:layout_width="32dp"
+                        android:layout_height="32dp"
+                        android:background="@drawable/small_round_button"
+                        android:contentDescription="@null"
+                        android:visibility="gone"
+                        app:layout_constraintTop_toTopOf="@id/oldImage2"
+                        app:layout_constraintEnd_toEndOf="@id/oldImage2"
+                        app:srcCompat="@drawable/ic_close_black_24dp" />
+
+                    <ImageView
+                        android:id="@+id/oldImage3"
+                        android:layout_width="@dimen/add_image_size"
+                        android:layout_height="@dimen/add_image_size"
+                        android:contentDescription="@null"
+                        android:visibility="gone"
+                        app:layout_constraintBottom_toBottomOf="parent"
+                        app:layout_constraintEnd_toStartOf="@+id/oldImage4"
+                        app:layout_constraintHorizontal_bias="0.5"
+                        app:layout_constraintStart_toEndOf="@+id/oldImage2"
+                        app:layout_constraintTop_toTopOf="parent" />
+
+                    <ImageButton
+                        android:id="@+id/deleteOldImg3Button"
+                        android:layout_width="32dp"
+                        android:layout_height="32dp"
+                        android:background="@drawable/small_round_button"
+                        android:contentDescription="@null"
+                        android:visibility="gone"
+                        app:layout_constraintTop_toTopOf="@id/oldImage3"
+                        app:layout_constraintEnd_toEndOf="@id/oldImage3"
+                        app:srcCompat="@drawable/ic_close_black_24dp" />
+
+                    <ImageView
+                        android:id="@+id/oldImage4"
+                        android:layout_width="@dimen/add_image_size"
+                        android:layout_height="@dimen/add_image_size"
+                        android:contentDescription="@null"
+                        android:visibility="gone"
+                        app:layout_constraintBottom_toBottomOf="parent"
+                        app:layout_constraintEnd_toEndOf="parent"
+                        app:layout_constraintHorizontal_bias="0.5"
+                        app:layout_constraintStart_toEndOf="@+id/oldImage3"
+                        app:layout_constraintTop_toTopOf="parent" />
+
+                    <ImageButton
+                        android:id="@+id/deleteOldImg4Button"
+                        android:layout_width="32dp"
+                        android:layout_height="32dp"
+                        android:background="@drawable/small_round_button"
+                        android:contentDescription="@null"
+                        android:visibility="gone"
+                        app:layout_constraintTop_toTopOf="@id/oldImage4"
+                        app:layout_constraintEnd_toEndOf="@id/oldImage4"
+                        app:srcCompat="@drawable/ic_close_black_24dp" />
+
+                </androidx.constraintlayout.widget.ConstraintLayout>
+
+                <androidx.constraintlayout.widget.ConstraintLayout
+                    android:id="@+id/imagesLinearLayout"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginStart="32dp"
+                    android:layout_marginEnd="32dp">
+
+                    <ImageButton
+                        android:id="@+id/image1button"
+                        android:layout_width="@dimen/add_image_size"
+                        android:layout_height="@dimen/add_image_size"
+                        android:backgroundTint="@color/white"
+                        android:contentDescription="@null"
+                        android:paddingStart="@dimen/add_image_padding"
+                        android:paddingTop="@dimen/add_image_padding"
+                        android:paddingEnd="@dimen/add_image_padding"
+                        android:paddingBottom="@dimen/add_image_padding"
+                        android:scaleType="centerCrop"
+                        android:visibility="gone"
+                        app:layout_constraintBottom_toBottomOf="parent"
+                        app:layout_constraintEnd_toStartOf="@+id/image2button"
+                        app:layout_constraintHorizontal_bias="0.5"
+                        app:layout_constraintStart_toStartOf="parent"
+                        app:layout_constraintTop_toTopOf="parent"
+                        app:srcCompat="@drawable/ic_add_image" />
+
+                    <ImageView
+                        android:id="@+id/image1"
+                        android:layout_width="@dimen/add_image_size"
+                        android:layout_height="@dimen/add_image_size"
+                        android:contentDescription="@null"
+                        android:visibility="gone"
+                        app:layout_constraintBottom_toBottomOf="parent"
+                        app:layout_constraintEnd_toStartOf="@+id/image2"
+                        app:layout_constraintHorizontal_bias="0.5"
+                        app:layout_constraintStart_toStartOf="parent"
+                        app:layout_constraintTop_toTopOf="parent" />
+
+                    <ImageButton
+                        android:id="@+id/image2button"
+                        android:layout_width="@dimen/add_image_size"
+                        android:layout_height="@dimen/add_image_size"
+                        android:backgroundTint="@color/white"
+                        android:contentDescription="@null"
+                        android:paddingStart="@dimen/add_image_padding"
+                        android:paddingTop="@dimen/add_image_padding"
+                        android:paddingEnd="@dimen/add_image_padding"
+                        android:paddingBottom="@dimen/add_image_padding"
+                        android:scaleType="centerCrop"
+                        android:visibility="gone"
+                        app:layout_constraintBottom_toBottomOf="parent"
+                        app:layout_constraintEnd_toStartOf="@+id/image3button"
+                        app:layout_constraintHorizontal_bias="0.5"
+                        app:layout_constraintStart_toEndOf="@+id/image1button"
+                        app:layout_constraintTop_toTopOf="parent"
+                        app:srcCompat="@drawable/ic_add_image" />
+
+                    <ImageView
+                        android:id="@+id/image2"
+                        android:layout_width="@dimen/add_image_size"
+                        android:layout_height="@dimen/add_image_size"
+                        android:contentDescription="@null"
+                        android:visibility="gone"
+                        app:layout_constraintBottom_toBottomOf="parent"
+                        app:layout_constraintEnd_toStartOf="@+id/image3"
+                        app:layout_constraintHorizontal_bias="0.5"
+                        app:layout_constraintStart_toEndOf="@+id/image1"
+                        app:layout_constraintTop_toTopOf="parent"/>
+
+                    <ImageButton
+                        android:id="@+id/image3button"
+                        android:layout_width="@dimen/add_image_size"
+                        android:layout_height="@dimen/add_image_size"
+                        android:backgroundTint="@color/white"
+                        android:contentDescription="@null"
+                        android:paddingStart="@dimen/add_image_padding"
+                        android:paddingTop="@dimen/add_image_padding"
+                        android:paddingEnd="@dimen/add_image_padding"
+                        android:paddingBottom="@dimen/add_image_padding"
+                        android:scaleType="centerCrop"
+                        android:visibility="gone"
+                        app:layout_constraintBottom_toBottomOf="parent"
+                        app:layout_constraintEnd_toStartOf="@+id/image4button"
+                        app:layout_constraintHorizontal_bias="0.5"
+                        app:layout_constraintStart_toEndOf="@+id/image2button"
+                        app:layout_constraintTop_toTopOf="parent"
+                        app:srcCompat="@drawable/ic_add_image" />
+
+                    <ImageView
+                        android:id="@+id/image3"
+                        android:layout_width="@dimen/add_image_size"
+                        android:layout_height="@dimen/add_image_size"
+                        android:contentDescription="@null"
+                        android:visibility="gone"
+                        app:layout_constraintBottom_toBottomOf="parent"
+                        app:layout_constraintEnd_toStartOf="@+id/image4"
+                        app:layout_constraintHorizontal_bias="0.5"
+                        app:layout_constraintStart_toEndOf="@+id/image2"
+                        app:layout_constraintTop_toTopOf="parent" />
+
+                    <ImageButton
+                        android:id="@+id/image4button"
+                        android:layout_width="@dimen/add_image_size"
+                        android:layout_height="@dimen/add_image_size"
+                        android:backgroundTint="@color/white"
+                        android:contentDescription="@null"
+                        android:paddingStart="@dimen/add_image_padding"
+                        android:paddingTop="@dimen/add_image_padding"
+                        android:paddingEnd="@dimen/add_image_padding"
+                        android:paddingBottom="@dimen/add_image_padding"
+                        android:scaleType="centerCrop"
+                        android:visibility="gone"
+                        app:layout_constraintBottom_toBottomOf="parent"
+                        app:layout_constraintEnd_toEndOf="parent"
+                        app:layout_constraintHorizontal_bias="0.5"
+                        app:layout_constraintStart_toEndOf="@+id/image3button"
+                        app:layout_constraintTop_toTopOf="parent"
+                        app:srcCompat="@drawable/ic_add_image" />
+
+                    <ImageView
+                        android:id="@+id/image4"
+                        android:layout_width="@dimen/add_image_size"
+                        android:layout_height="@dimen/add_image_size"
+                        android:contentDescription="@null"
+                        android:visibility="gone"
+                        app:layout_constraintBottom_toBottomOf="parent"
+                        app:layout_constraintEnd_toEndOf="parent"
+                        app:layout_constraintHorizontal_bias="0.5"
+                        app:layout_constraintStart_toEndOf="@+id/image3"
+                        app:layout_constraintTop_toTopOf="parent" />
+
+                </androidx.constraintlayout.widget.ConstraintLayout>
+
+                <com.google.android.material.textfield.TextInputLayout
+                    style="@style/Widget.MaterialComponents.TextInputLayout.OutlinedBox.ExposedDropdownMenu"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginStart="32dp"
+                    android:layout_marginEnd="32dp"
+                    android:hint="@string/category_hint">
+
+                    <AutoCompleteTextView
+                        android:id="@+id/categoriesDropdown"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:editable="false" />
+
+                </com.google.android.material.textfield.TextInputLayout>
+
+                <com.google.android.material.switchmaterial.SwitchMaterial
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="center"
+                    android:layout_marginHorizontal="32dp"
+                    android:layout_marginVertical="16dp"
+                    android:checked="@={editPockViewModel.chatEnabled}"
+                    android:hint="@string/chat_switch_hint"
+                    android:textColorHint="#5C5C5C" />
+
+                <com.google.android.material.button.MaterialButton
+                    android:id="@+id/updatePockButton"
+                    style="@style/Widget.MaterialComponents.Button"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginStart="32dp"
+                    android:layout_marginBottom="32dp"
+                    android:text="@string/update_pock_button"
+                    android:textColor="@android:color/white"
+                    app:backgroundTint="@color/colorAccent"
+                    app:layout_constraintEnd_toEndOf="parent"
+                    app:layout_constraintTop_toTopOf="parent" />
+
+                <ProgressBar
+                    android:id="@+id/editPockProgressBar"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="center"
+                    android:layout_marginTop="32dp"
+                    android:minWidth="50dp"
+                    android:minHeight="50dp"
+                    android:visibility="gone" />
+
+            </LinearLayout>
+
+        </ScrollView>
+
+    </LinearLayout>
+
+</layout>

@@ -1,0 +1,80 @@
+<?xml version="1.0" encoding="utf-8"?>
+<layout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools">
+
+    <data>
+
+        <variable
+            name="viewModel"
+            type="com.pes.pockles.view.ui.map.MapViewModel" />
+
+        <import type="android.view.View" />
+    </data>
+
+    <!--If android:name is changed to MapFragment, it will break the app-->
+    <androidx.coordinatorlayout.widget.CoordinatorLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:animateLayoutChanges="true">
+
+        <FrameLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent">
+
+            <fragment
+                android:id="@+id/mapView"
+                android:name="com.google.android.gms.maps.SupportMapFragment"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                tools:context=".view.ui.map.MapFragment" />
+
+            <com.google.android.material.floatingactionbutton.FloatingActionButton
+                android:id="@+id/outlinedButton"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                app:backgroundTint="@color/primary"
+                app:fabSize="mini"
+                app:srcCompat="@drawable/ic_filter_list_black_24dp"
+                app:useCompatPadding="true" />
+
+            <com.google.android.material.chip.Chip
+                android:id="@+id/loader"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center_horizontal"
+                android:layout_marginTop="16dp"
+                android:backgroundTint="#CEE0E0E0"
+                android:text="@string/loading" />
+        </FrameLayout>
+
+        <LinearLayout
+            android:id="@+id/bottomSheet"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:background="@drawable/view_pock_header_bg"
+            android:backgroundTint="@color/profile_light_background"
+            android:orientation="vertical"
+            app:layout_behavior="@string/bottom_sheet_behavior"
+            tools:context=".view.ui.map.BottomSheetsPocks">
+
+            <androidx.appcompat.widget.AppCompatTextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:fontFamily="@font/montserrat_bold"
+                android:padding="16dp"
+                android:text="@string/nearby_pocks"
+                android:textAppearance="@style/TextAppearance.AppCompat.Medium"
+                android:textColor="@color/md_black_1000" />
+
+
+            <androidx.recyclerview.widget.RecyclerView
+                android:id="@+id/nearPockList"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:paddingBottom="85dp" />
+
+        </LinearLayout>
+
+    </androidx.coordinatorlayout.widget.CoordinatorLayout>
+</layout>

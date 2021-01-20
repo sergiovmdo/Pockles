@@ -1,0 +1,38 @@
+<?xml version="1.0" encoding="utf-8"?>
+<PreferenceScreen xmlns:android="http://schemas.android.com/apk/res/android">
+
+    <PreferenceCategory android:title="General">
+
+        <ListPreference
+            android:defaultValue="es"
+            android:entries="@array/language_list_titles"
+            android:entryValues="@array/language_list_values"
+            android:icon="@drawable/ic_translate_black_24dp"
+            android:key="Language"
+            android:title="@string/leguage" />
+    </PreferenceCategory>
+
+    <PreferenceCategory android:title="Acerca de">
+
+        <Preference
+            android:icon="@drawable/ic_info_outline_black_24dp"
+            android:summary="@string/version_summary"
+            android:title="@string/version_title" />
+
+        <Preference
+            android:icon="@drawable/ic_star_black_24dp"
+            android:title="@string/rate_app_title">
+            <intent
+                android:action="android.intent.action.VIEW"
+                android:data="https://www.elcomercio.com/afull/meme-trollface-creacion-redessociales-internet.html" />
+        </Preference>
+
+        <Preference
+            android:icon="@drawable/ic_people_black_24dp"
+            android:key="AboutUs"
+            android:title="@string/about_us" />
+
+    </PreferenceCategory>
+
+
+</PreferenceScreen>

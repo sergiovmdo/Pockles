@@ -1,0 +1,35 @@
+image: mingc/android-build-box:latest
+
+pipelines:
+  pull-requests:
+    '**':
+      - step:
+          caches:
+            - gradle
+            - android-sdk
+          script:
+            - echo "Setting up"
+            - unset ANDROID_NDK_HOME
+            - echo "Build"
+            - ./gradlew assembleDebug
+  branches:
+    develop:
+      - step:
+          caches:
+            - gradle
+            - android-sdk
+          script:
+            - echo "Setting up"
+            - unset ANDROID_NDK_HOME
+            - echo "Build"
+            - ./gradlew assembleDebug
+          artifacts:
+            - app/build/outputs/apk/debug/*.apk
+      - step:
+          script:
+            # Saving artifact
+            - curl -X POST "https://${BB_AUTH_STRING}@api.bitbucket.org/2.0/repositories/${BITBUCKET_REPO_OWNER}/${BITBUCKET_REPO_SLUG}/downloads" --form files=@"app/build/outputs/apk/debug/app-debug.apk"
+
+definitions:
+  caches:
+    android-sdk: android-sdk

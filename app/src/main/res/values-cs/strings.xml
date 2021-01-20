@@ -1,0 +1,150 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <string name="app_name">Pockles</string>
+    <string name="pock_something_hint">Pockea  něco</string>
+    <string name="category_hint">Kategorie</string>
+    <string name="chat_switch_hint">Zprávy</string>
+    <string name="pockear_button">Pockear</string>
+    <string name="pock_content_error">Pytel bez obsahu?</string>
+    <string name="added_pock_message">Vaše nové pock bylo zveřejněno</string>
+    <string name="publishing_pock">Vydavatelství</string>
+    <string name="api_error_message">"S vydáním vašeho pytle bylo něco v nepořádku"</string>
+    <string name="map_menu_item">Mapa</string>
+    <string name="chat_menu_item">Zprávy</string>
+    <string name="notifications_menu_item">Oznámení</string>
+    <string name="profile_menu_item">Profil</string>
+    <string name="close_filter_button">Zavřít</string>
+    <string name="filter_dialog_text">Označte kategorie Pock, které chcete vidět na mapě …</string>
+    <string name="change_image">"Změnit obrázek"</string>
+    <string name="user_format">User: %s</string>
+    <string name="pocks_history_button">" Pock History"</string>
+    <string name="title_activity_pocks_history">NewPocksHistory</string>
+    <string name="message">Message</string>
+    <string name="edit_button">" Upravit"</string>
+    <string name="failed_loc">" Nepodařilo se dostat ty bomby"</string>
+    <string name="achievements_button_text">" Úspěchy"</string>
+    <string name="pock_history_profile_button_text">Pock history</string>
+    <string name="edit_info_profile_button_text">" Upravit profil"</string>
+    <string name="settings_profile_button_text">" Nastavení"</string>
+    <string name="close_session_profile_button_text">" Odhlásit se"</string>
+    <string name="badge_profile_text">Badge</string>
+    <string name="pocks_created_length_profile">%s pocks</string>
+    <string name="permission_title">" Povolit upozornění"</string>
+    <string name="permission_description">"Pockles potřebuje, abyste umožnili přístup k vaší poloze, aby fungovali, bez ní budete mít přístup pouze k dříve vytvořenému profilu a chatům. Chcete, abychom vás znovu požádali?"</string>
+    <string name="permission_ok">Ano</string>
+    <string name="permission_no">No</string>
+    <string name="google_signin">"Přihlaste se pomocí Google"</string>
+    <string name="facebook_sign_in">"Přihlaste se pomocí Facebook"</string>
+    <string name="email_sign_in">"Přihlaste se pomocí e-mail"</string>
+    <string name="register_text_p1">"Nemáte účet?"</string>
+    <string name="register_text_p2">"K registraci použijte některou z předchozích možností"</string>
+    <string name="create_profile_register_activity_text">"vytvořit profil"</string>
+    <string name="register_name_hint">"název "</string>
+    <string name="register_birthdate_hint">"Datum narození"</string>
+    <string name="register_accent_color_hint">"Zvýrazněná barva"</string>
+    <string name="register_accent_color_subtitle">"Barva je uvedena v profilu"</string>
+    <string name="register_pocks_visibility_title">"Viditelnost kapes"</string>
+    <string name="register_pock_visibility_subtitle">"Poloměr v kilometrech od míst, která se objeví na mapě"</string>
+    <string name="register_create_profile_button_text">"Vytvořit"</string>
+    <string name="visibility_register_format">%s km</string>
+    <string name="next">"Pokračovat"</string>
+    <string name="field_must_not_be_empty">"Pole nemůže být prázdné"</string>
+    <string name="too_young">"Minimální věk 13 let"</string>
+    <string name="registering">"Zaregistrovat se"</string>
+    <string name="change">"Změna"</string>
+    <string name="invalid_date">"Neplatné datum"</string>
+    <string name="register_back_button_text">"Za"</string>
+    <string name="error_try_later">"Objevila se chyba. Prosím, zkuste to později"</string>
+    <string name="checking_data">"Kontrola dat …"</string>
+    <string name="cancel_register_dialog_title">"Zrušit registraci"</string>
+    <string name="cancel_register_dialog_description">"Opravdu chcete zrušit registraci?"</string>
+    <string name="yes">Ano</string>
+    <string name="no">Ne</string>
+    <string name="error_uploading_an_image">"Při nahrávání obrázku došlo k chybě"</string>
+    <string name="error_uploading_images">"Při nahrávání obrázků došlo k chybě"</string>
+    <string name="error_selecting_image">"Ahoj hagut chyba při výběru obrázek"</string>
+    <string name="upload_image_dialog_title">"Nahrát obrázek"</string>
+    <string name="take_photo_dialog_option">"Vyfotit"</string>
+    <string name="select_photo_dialog_option">"Vyberte fotografii"</string>
+    <string name="error_creating_profile">"Při vytváření profilu došlo k chybě. Zkuste to znovu později"</string>
+    <string name="save">"Uložit"</string>
+    <string name="nearby_pocks">"Pocks kolem vás"</string>
+    <string name="error_general_like">"U podobných se vyskytla chyba"</string>
+    <string name="error_no_pock">"Nepodařilo se mi to dostat"</string>
+    <string name="alertTitleReport">"Nahlásit Pock"</string>
+    <string name="alertMessageReport">"Nahlášení Pocku je velmi vážné a nelze jej zrušit. Opravdu chcete nahlásit tento Pock?"</string>
+    <string name="alertOK">Nahlásit</string>
+    <string name="alertTitleMotivo">"Vyberte důvod"</string>
+    <string name="alertNO">"Zrušení"</string>
+    <string name="reported">"Tuto zprávu jste již nahlásili"</string>
+    <string name="reportSend">"Tuto zprávu jsme zaslali do našich systémů"</string>
+    <string name="has_published_share_text">"Zveřejnil nový pytel"</string>
+    <string name="shared_from_pockles">"Sdíleno od Pockles"</string>
+    <string name="title_toolbar_edit_pock">"Upravit Pock"</string>
+    <string name="correct_pock_hint">"Opravte Pock"</string>
+    <string name="general_category">"Všeobecné"</string>
+    <string name="update_pock_button">"Uložit změny"</string>
+    <string name="updated_pock_message">"Obsah vašeho pock byl aktualizován"</string>
+    <string name="api_error_updating_message">"Při aktualizaci obsahu vašeho pytle došlo k potížím"</string>
+    <string name="liked_pock_activity_title">"Mám rád"</string>
+    <string name="error_obtaining_liked_pocks">"Při získávání hodnocení Líbí se"</string>
+    <string name="title_toolbar_edit_profile">Upravit profil</string>
+    <string name="error_removing_like">"Při odstraňování typu z kapsy došlo k chybě"</string>
+    <string name="username">"Uživatelské jméno:"</string>
+    <string name="email">"E-mailem:"</string>
+    <string name="birthdate">"Datum narození:"</string>
+    <string name="change_password">"Změnit heslo:"</string>
+    <string name="confirm_password">"Potvrďte heslo:"</string>
+    <string name="new_password">"Nové heslo"</string>
+    <string name="repeat_password">"Zopakovat heslo"</string>
+    <string name="delete">"Odstranit"</string>
+    <string name="cancel_changes_dialog_title">"Existují změny bez uložení"</string>
+    <string name="cancel_changes_dialog_description">"Opravdu chcete jít ven?"</string>
+    <string name="error_editing_the_profile">"Při aktualizaci vašeho profilu došlo k chybě. Zkuste to znovu později"</string>
+    <string name="success_editing_the_profile">"Váš profil byl aktualizován"</string>
+    <string name="no_changes_editing_the_profile">"Váš profil je již aktualizován"</string>
+    <string name="chats">"Zprávy"</string>
+    <string name="you_dont_have_any_chat">"Nemáš žádný zprávy"</string>
+    <string name="cannot_load_chats">"Rozhovory nebylo možné získat"</string>
+    <string name="title_activity_chat">Zprávy</string>
+    <string name="cannot_obtain_the_chat_messages">"Nelze získat zprávy chatu"</string>
+    <string name="cannot_add_message">"Zpráva se neodesílá"</string>
+    <string name="settings">"Úpravy"</string>
+    <string name="leguage">"Jazyk"</string>
+    <string name="help">"Pomoc"</string>
+    <string name="version_title">"Verze"</string>
+    <string name="rate_app_title">"Dej nám trochu, jako bych šel krůtí"</string>
+    <string name="about_us">"O nás"</string>
+    <string name="notifications_fragment_title">"Oznámení"</string>
+
+    <string-array name="categories">
+        <item>Oznámení</item>
+        <item>Nákup a prodej</item>
+        <item>Sportovní</item>
+        <item>Zábava</item>
+        <item>Domácí mazlíčci</item>
+        <item>Zdraví</item>
+        <item>Technika</item>
+        <item>Cestovní ruch</item>
+        <item>+18</item>
+        <item>Ostatní</item>
+    </string-array>
+
+    <string-array name="motivos">
+        <item>SPAM</item>
+        <item>Rasismus</item>
+        <item>Nevhodná kategorie</item>
+        <item>Nevhodný obsah</item>
+        <item>Hrozby</item>
+        <item>Troll</item>
+        <item>Ostatní</item>
+    </string-array>
+    <string-array name="language_list_titles">
+        <item>Spanělština</item>
+        <item>Angličtina</item>
+        <item>Katalánština</item>
+        <item>čeština</item>
+    </string-array>
+    <string name="achievements_activity_title">Mé úspěchy</string>
+    <string name="enter_message">Zpráva ...</string>
+</resources>

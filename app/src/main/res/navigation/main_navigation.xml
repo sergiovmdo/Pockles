@@ -1,0 +1,61 @@
+<?xml version="1.0" encoding="utf-8"?>
+<navigation xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/navigation_graph"
+    app:startDestination="@id/mapFragment">
+
+    <fragment
+        android:id="@+id/chatFragment"
+        android:name="com.pes.pockles.view.ui.chat.AllChatsFragment"
+        android:label="fragment_chat"
+        tools:layout="@layout/fragment_chat" />
+    <fragment
+        android:id="@+id/mapFragment"
+        android:name="com.pes.pockles.view.ui.map.MapFragment"
+        android:label="fragment_map"
+        tools:layout="@layout/fragment_map" />
+    <fragment
+        android:id="@+id/userProfileFragment"
+        android:name="com.pes.pockles.view.ui.profile.ProfileFragment"
+        android:label="fragment_user_profile"
+        tools:layout="@layout/fragment_profile">
+        <action
+            android:id="@+id/action_userProfileFragment_to_pocksHistoryActivity"
+            app:destination="@id/pocksHistoryActivity" />
+        <action
+            android:id="@+id/action_userProfileFragment_to_likedPocksActivity"
+            app:destination="@id/likedPocksActivity" />
+        <action
+            android:id="@+id/action_userProfileFragment_to_achievementsActivity"
+            app:destination="@id/achievementsActivity"
+            tools:layout = "@layout/activity_achievements"/>
+
+        <action
+            android:id="@+id/action_userProfileFragment_to_settingsActivity"
+            app:destination="@id/settingsActivity" />
+    </fragment>
+    <fragment
+        android:id="@+id/notificationsFragment"
+        android:name="com.pes.pockles.view.ui.notifications.NotificationsFragment"
+        android:label="fragment_notifications"
+        tools:layout="@layout/fragment_notifications" />
+    <activity
+        android:id="@+id/pocksHistoryActivity"
+        android:name="com.pes.pockles.view.ui.pockshistory.PocksHistoryActivity"
+        android:label="PocksHistoryActivity"
+        tools:layout="@layout/activity_pocks_history" />
+    <activity
+        android:id="@+id/likedPocksActivity"
+        android:name="com.pes.pockles.view.ui.likes.LikedPocksActivity"
+        android:label="LikedPocksActivity"
+        tools:layout="@layout/activity_liked_pocks" />
+    <activity
+        android:id="@+id/settingsActivity"
+        android:name="com.pes.pockles.view.ui.settings.SettingsActivity"
+        android:label="SettingsActivity" />
+    <activity
+        android:id="@+id/achievementsActivity"
+        android:name="com.pes.pockles.view.ui.achievements.AchievementsActivity"
+        android:label="AchievementsActivity" />
+</navigation>

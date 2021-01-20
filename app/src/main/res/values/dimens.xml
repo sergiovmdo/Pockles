@@ -1,0 +1,7 @@
+<resources>
+    <dimen name="fab_margin">16dp</dimen>
+    <dimen name="mtrl_transition_shared_axis_slide_distance">30dp</dimen>
+    <dimen name="register_menu_peek_height">230dp</dimen>
+    <dimen name="add_image_size">75dp</dimen>
+    <dimen name="add_image_padding">25dp</dimen>
+</resources>

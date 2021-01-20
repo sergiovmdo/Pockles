@@ -1,0 +1,150 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <string name="app_name">Pockles</string>
+    <string name="chat_switch_hint">Xat</string>
+    <string name="pockear_button">Pockear</string>
+    <string name="pock_content_error">Un pock sense contingut?</string>
+    <string name="added_pock_message">El teu pock ha sigut publicat</string>
+    <string name="publishing_pock">Publicant</string>
+    <string name="api_error_message">Hi ha hagut algun problema amb la publicació del pock</string>
+    <string name="chat_menu_item">Xats</string>
+    <string name="map_menu_item">Mapa</string>
+    <string name="notifications_menu_item">Notificacions</string>
+    <string name="pock_something_hint">Pockeja alguna cosa</string>
+    <string name="category_hint">Categoria</string>
+    <string name="profile_menu_item">Perfil</string>
+    <string name="close_filter_button">Tancar</string>
+    <string name="filter_dialog_text">" Marca les categories de Pock que vulguis veure en el teu mapa ..."</string>
+    <string name="change_image">Cambiar l\'imatge</string>
+    <string name="user_format">User: %s</string>
+    <string name="pocks_history_button">Historial de Pocks</string>
+    <string name="title_activity_pocks_history">NewPocksHistory</string>
+    <string name="message">Message</string>
+    <string name="edit_button">Editar</string>
+    <string name="failed_loc">" No es poden obtenir els pocks"</string>
+    <string name="achievements_button_text">Èxits</string>
+    <string name="pock_history_profile_button_text">Historial de pocks</string>
+    <string name="edit_info_profile_button_text">Editar perfil</string>
+    <string name="settings_profile_button_text">Configuració</string>
+    <string name="close_session_profile_button_text">Tancar sessió</string>
+    <string name="badge_profile_text">Badge</string>
+    <string name="pocks_created_length_profile">%s pocks</string>
+    <string name="permission_title">Alerta de permisos</string>
+    <string name="permission_description">" Pockles necessita que li donis accés a la  teva ubicació per funcionar, sense ella, només podràs accedir al teu perfil i xats prèviament creats. Vols que et preguntem de nou?"</string>
+    <string name="permission_ok">SI</string>
+    <string name="permission_no">No</string>
+    <string name="google_signin">Inicia sessió amb Google</string>
+    <string name="facebook_sign_in">Inicia sessió amb Facebook</string>
+    <string name="email_sign_in">Inicia sessió amb e-mail</string>
+    <string name="register_text_p1">No tens compte?</string>
+    <string name="register_text_p2">Utilitza cualqueira de les opcions anteriors per registrar-te</string>
+    <string name="create_profile_register_activity_text">Crea un perfil</string>
+    <string name="register_name_hint">Nom</string>
+    <string name="register_birthdate_hint">Data  naixement</string>
+    <string name="register_accent_color_hint">Color resaltat</string>
+    <string name="register_accent_color_subtitle">Color que es mostra en el teu perfil</string>
+    <string name="register_pocks_visibility_title">Visibilitat dels pocks</string>
+    <string name="register_pock_visibility_subtitle">Radi en km dels pocks que apareixeran en el mapa</string>
+    <string name="register_create_profile_button_text">Crear</string>
+    <string name="next">Continuar</string>
+    <string name="visibility_register_format">%s km</string>
+    <string name="field_must_not_be_empty">El camp no pot estar buit</string>
+    <string name="too_young">Edat mínima de 13 anys</string>
+    <string name="change">Canviar</string>
+    <string name="registering">Registrant</string>
+    <string name="invalid_date">Data invalida</string>
+    <string name="register_back_button_text">Enrere</string>
+    <string name="error_try_later">Hi ha hagut un error, intenteu de nou més tard</string>
+    <string name="checking_data">Comprovant dades ...</string>
+    <string name="cancel_register_dialog_title">Cancelar registre</string>
+    <string name="cancel_register_dialog_description">Segur que vols cancel·lar el registre?</string>
+    <string name="yes">Si</string>
+    <string name="no">No</string>
+    <string name="error_uploading_an_image">Hi ha hagut un error al pujar l\'imatge</string>
+    <string name="error_uploading_images">Hi ha hagut un error al pujar les imatges</string>
+    <string name="error_selecting_image">Hi ha hagut un error al seleccinar la imatge</string>
+    <string name="upload_image_dialog_title">Pujar imatge</string>
+    <string name="take_photo_dialog_option">Treure foto</string>
+    <string name="select_photo_dialog_option">Seleccionar foto</string>
+    <string name="error_creating_profile">Hi ha hagut un error al crear el perfil</string>
+    <string name="save">Guardar</string>
+    <string name="nearby_pocks">Pocks a prop</string>
+    <string name="error_general_like">Hi ha hagut un error amb el like</string>
+    <string name="error_no_pock">No s\'ha pugut obtenir el pock</string>
+    <string name="alertTitleReport">Reportar Pock</string>
+    <string name="alertMessageReport">Reportar un Pock és una cosa molt seriosa i no pot ser revocat ¿Estas segur que vols reportar aquest Pock?</string>
+    <string name="alertOK">Reportar</string>
+    <string name="alertTitleMotivo">Tria un motiu</string>
+    <string name="alertNO">Cancelar</string>
+    <string name="reported">Ja has reportat el pock</string>
+    <string name="reportSend">Hem enviat el report als nostres sistemes</string>
+    <string name="has_published_share_text">ha publicat un nou pock el</string>
+    <string name="shared_from_pockles">Compartit desde pockles</string>
+    <string name="title_toolbar_edit_pock">Editar Pock</string>
+    <string name="correct_pock_hint">Corregir el teu pock</string>
+    <string name="general_category">General</string>
+    <string name="update_pock_button">Guardar canvis</string>
+    <string name="updated_pock_message">S\'ha actualitzat el contingut del teu Pock</string>
+    <string name="api_error_updating_message">Hi ha hagut algun problema actualitzant el contingut del teu Pock</string>
+    <string name="liked_pock_activity_title">M\'agrada</string>
+    <string name="error_removing_like">Hi ha hagut un error al eliminar el m\'agrada</string>
+    <string name="error_obtaining_liked_pocks">Hi ha hagut un error a l\'obtenir els pocks agradats</string>
+    <string name="title_toolbar_edit_profile">Editar Perfil</string>
+    <string name="username">Nom d\'usuari:</string>
+    <string name="email">Correu electronic:</string>
+    <string name="birthdate">Data de naixement:</string>
+    <string name="change_password">Canviar la contrasenya</string>
+    <string name="confirm_password">Confirmar la contrasenya</string>
+    <string name="new_password">Nova contrasenya</string>
+    <string name="repeat_password">Repetir contraseña</string>
+    <string name="delete">Eliminar</string>
+    <string name="cancel_changes_dialog_title">Hi han canvis sense guardar</string>
+    <string name="cancel_changes_dialog_description">Segur que vols sortir?</string>
+    <string name="error_editing_the_profile">Hi ha hagut un error a l\'actualitzar el teu perfil. Intenteu de nou més tard</string>
+    <string name="success_editing_the_profile">S\'ha actualitzat el teu perfil</string>
+    <string name="no_changes_editing_the_profile">El teu perfil ja esta actualitzat</string>
+    <string name="chats">Xats</string>
+    <string name="title_activity_chat">Xat</string>
+    <string name="you_dont_have_any_chat">No tens cap xat</string>
+    <string name="cannot_load_chats">No s\'han pogut obtenir els xats</string>
+    <string name="cannot_obtain_the_chat_messages">No s\'han pogut obtenir els missatjes del xats</string>
+    <string name="cannot_add_message">No s\'ha pugut enviar el missatje</string>
+    <string name="settings">Ajustos</string>
+    <string name="help">Ajuda</string>
+    <string name="version_title">Versió</string>
+    <string name="rate_app_title">Puntua la nostra aplicació</string>
+    <string name="about_us">Sobre nosaltres</string>
+    <string name="notifications_fragment_title">Notificacions</string>
+    <string name="leguage">Idioma</string>
+
+    <string-array name="categories">
+        <item>Anuncis</item>
+        <item>Compra i Venta</item>
+        <item>Esports</item>
+        <item>Entretenimient</item>
+        <item>Mascotes</item>
+        <item>Salut</item>
+        <item>Tecnología</item>
+        <item>Turisme</item>
+        <item>+18</item>
+        <item>Altres</item>
+    </string-array>
+
+    <string-array name="motivos">
+        <item>SPAM</item>
+        <item>Racisme</item>
+        <item>Categoria inapropiada</item>
+        <item>Contingut inapropiat</item>
+        <item>Amenaces</item>
+        <item>Troll</item>
+        <item>Altres</item>
+    </string-array>
+    <string-array name="language_list_titles">
+        <item>Espanyol</item>
+        <item>Anglés</item>
+        <item>Català</item>
+        <item>txec</item>
+    </string-array>
+    <string name="achievements_activity_title">Els meus Éxits</string>
+    <string name="enter_message">Missatge..</string>
+</resources>
